@@ -18,11 +18,11 @@ Configuration Properties
 #. Configure the page as below
 
    #. Configuration Name : IIS-Vanilla-<My Name>  Why my name ? Because this app will be created in Azure AD tenant. And we need to differentiate all apps. 
-   #. Enable ``Single Sign-on (SSO)
+   #. Enable ``Single Sign-on (SSO)``
 
-      .. image:: ../pictures/module2/SSO.png
-         :align: center
-         :scale: 50%
+        .. image:: ../pictures/module2/SSO.png
+           :align: center
+           :scale: 50%
       
 
    #. In ``Azure Service Account Details``, Select ``Copy Account Info form Existing Configuration``, and select ``IIS-basline``, then click ``Copy``
