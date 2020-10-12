@@ -1,25 +1,12 @@
 Class 2 - Deploy APM to protect on-prems apps
 #############################################
 
-In this class, we will deploy a modern application (Arcadia Finance app) with modern tools in a modern environment.
+In this class, we will publish ``Vanilla`` and ``Bluesky`` applications hosted on-prems.
 
-What are modern tools:
-   - Ansible
-   - Terraform
-   - Jenkins
+To do so, we will use Guided Configuration template ``Azure AD Application`` 
 
-What is a modern environment:
-   - Kubernetes
-   - Docker containers with docker registry
-
-.. note:: Don't be afraid if you don't know those tools. The goal of the lab is not to learn how to deploy them, but how to use them.
-
-**First of all, this is Arcadia Finance application**
-
-.. image:: ./pictures/arcadia-app.png
+.. image:: ./pictures/AGC.png
    :align: center
-
-|
 
 **Class 2 - All sections**
 
