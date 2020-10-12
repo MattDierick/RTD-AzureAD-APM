@@ -1,35 +1,34 @@
-Architecture of Arcadia Application
-###################################
+Procedure for SA/SME
+####################
 
-.. note:: This application is available in GitLab in case you want to build your own lab : 
+.. warning :: Only SA and SME-UA with administrator role on this demo tenant, can create users.
 
-First of all, it is important to understand how Arcadia app is split between micro-services
+#. Connect to Azure Portal and select F5access tenant
 
+   .. image:: ../pictures/module1/tenant.png
+      :align: center
 
-**This is what Arcadia App looks like when the 4 microservices are up and running, and you can see how traffic is routed based on URI**
+#. Go to ``Azure Active Directory`` > ``Users``
+#. Click ``Create new``
 
-.. image:: ../pictures/module1/arcadia-api.png
-   :align: center
+   .. image:: ../pictures/module1/new.png
+      :align: center   
 
-**But you can deploy Arcadia Step by Step**
+#. Enter the information, and click ``Create``
 
-If you deploy only ``Main App`` and ``Back End`` services.
+   .. image:: ../pictures/module1/user.png
+      :align: center
 
-.. image:: ../pictures/module1/MainApp.png
-   :align: center
+#. Click on ``Multi-Factor Authentication``
 
-.. note:: You can see App2 (Money Transfer) and App3 (Refer Friend) are not available. There is dynamic content showing a WARNING instead of a 404 or blank frame.
+   .. image:: ../pictures/module1/mfa_menu.png
+      :align: center
 
-|
+#. ``Enable MFA`` for the created user
 
-If you deploy ``Main App``, ``Back End`` and ``Money Tranfer`` services.
+   .. image:: ../pictures/module1/mfa1.png
+      :align: center
 
-.. image:: ../pictures/module1/app2.png
-   :align: center
+   .. image:: ../pictures/module1/mfa2.png
+      :align: center
 
-|
-
-If you deploy ``Main App``, ``Back End``, ``Money Tranfer`` and ``Refer Friend`` services.
-
-.. image:: ../pictures/module1/app3.png
-   :align: center

@@ -1,25 +1,16 @@
 Class 4 - Enable MFA
 ####################
 
-In this class, we will deploy a modern application (Arcadia Finance app) with modern tools in a modern environment.
+.. warning :: You can **not** run this class without an F5 SA or F5 SME-UA lead. Please reach out to your local SA/SME-UA lead in order to activate an account for you.
 
-What are modern tools:
-   - Ansible
-   - Terraform
-   - Jenkins
+   #. EMEA : Matthieu
+   #. USA : Jason or Shannon
+   #. APCJ : Shain
 
-What is a modern environment:
-   - Kubernetes
-   - Docker containers with docker registry
+In this class, we will use another user account (created by SA/SME-UA), with MFA enabled on this account.
 
-.. note:: Don't be afraid if you don't know those tools. The goal of the lab is not to learn how to deploy them, but how to use them.
+Let's say, a SA/SME created the account ``matt@f5access.onmicrosoft.com`` for me. Then he enabled the MFA.
 
-**First of all, this is Arcadia Finance application**
-
-.. image:: ./pictures/arcadia-app.png
-   :align: center
-
-|
 
 **Class 4 - All sections**
 
