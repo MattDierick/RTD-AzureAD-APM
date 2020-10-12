@@ -18,6 +18,18 @@ In this lab, we will use the new **Easy Button** Guided Configuration template. 
 .. image:: AAD-APM-archi.png
    :align: center
 
+|
+
+In the video below, you can see the use case. This is **not** the **lab video**, it is the public facing use case demo.
+
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="1120" height="630" src="https://www.youtube.com/embed/6NDUaDz7NQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
