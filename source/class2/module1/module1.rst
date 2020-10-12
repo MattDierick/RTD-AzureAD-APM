@@ -22,6 +22,7 @@ Configuration Properties
          :align: center
          :scale: 50%
 
+      |
       .. note :: In a real world, you will set here the values from the Azure Service Application created for APM. You have to create an Azure Application so that APM get access to Microsoft Graph API. But for **security concerns**, I can't show in this lab the application secret.
 
       .. note :: The steps to create this Azure applications are below
@@ -42,7 +43,6 @@ Configuration Properties
    #. Click ``Test Connection`` button --> Connection is valid
 
       .. image:: ../pictures/module1/test_conn.png
-         :align: center
          :scale: 50%
 
    #. Click Next
@@ -57,7 +57,6 @@ Service Provider
    #. Entity ID is auto-filled``https://bluesky.f5access.onmicrosoft.com/IIS-Bluesky-my name>``
 
       .. image:: ../pictures/module1/SP.png
-         :align: center
          :scale: 50%
 
    #. Click ``Save & Next``
@@ -73,12 +72,11 @@ Azure Active Directory
 #. Click ``Add``
 #. In the new screen, configure as below
 
-   #. Signing Key : ``default.key```
-   #. Signing Certificate : ``default.crt```
+   #. Signing Key : ``default.key``
+   #. Signing Certificate : ``default.crt``
    #. Signing Key Passphrase : ``F5twister$``
 
       .. image:: ../pictures/module1/signing.png
-         :align: center
          :scale: 50%
 
    #. In ``User And User Groups``, click ``Add``
@@ -89,6 +87,7 @@ Azure Active Directory
          
          .. image:: ../pictures/module1/user.png
             :align: center
+         |
 
       #. Click ``Close``
       #. You can see ``user1`` in the list.
@@ -134,6 +133,7 @@ Deploy your app template
 
    .. image:: ../pictures/module1/deploy.png
       :align: center
+   |
 
 #. Behind the scene, the deployment creates an Azure Enterprise Application for Bluesky. We can see it in Azure portal (you don't have access in this lab). With this Enterprise Application, Azure knows where to redirect you when authenticated. And this app has the certificate and key used to sign the SAML assertion.
 
@@ -153,6 +153,7 @@ Test your deployment
    .. image:: ../pictures/module1/login.png
       :align: center
       :scale: 50%
+   |
 
 #. You are redirected to APM with a SAML assertion, and can access to Bluesky application
 
