@@ -1,22 +1,13 @@
-Class 1 - Check Lab Archtiecture
-################################
+Class 1 - Check the Lab Archtiecture
+####################################
 
-In this class, we will deploy a modern application (Arcadia Finance app) with modern tools in a modern environment.
+In this class, we will protect 3 apps:
 
-What are modern tools:
-   - Ansible
-   - Terraform
-   - Jenkins
+#. 2 internal apps
+#. 1 cloud app hosted in Azure cloud
 
-What is a modern environment:
-   - Kubernetes
-   - Docker containers with docker registry
 
-.. note:: Don't be afraid if you don't know those tools. The goal of the lab is not to learn how to deploy them, but how to use them.
-
-**First of all, this is Arcadia Finance application**
-
-.. image:: ./pictures/arcadia-app.png
+.. image:: ./pictures/labarchi.png
    :align: center
 
 |

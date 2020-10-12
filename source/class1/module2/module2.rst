@@ -1,5 +1,5 @@
-Architecture of Internal Apps
-#############################
+Architecture of Cloud App
+#########################
 
 .. note:: This application is available in GitLab in case you want to build your own lab : 
 
