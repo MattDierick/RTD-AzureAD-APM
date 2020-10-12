@@ -1,7 +1,7 @@
 Procedure for SA/SME
 ####################
 
-.. warning :: Only SA and SME-UA with administrator role on this demo tenant, can create users.
+.. warning :: Only SA and SME-UA with administrator role on this demo tenant, can create users. If you are not a SA or SME lead, move to the next section.
 
 #. Connect to Azure Portal and select F5access tenant
 
@@ -12,17 +12,20 @@ Procedure for SA/SME
 #. Click ``Create new``
 
    .. image:: ../pictures/module1/new.png
-      :align: center   
+      :align: center
+   |
 
 #. Enter the information, and click ``Create``
 
    .. image:: ../pictures/module1/user.png
       :align: center
+   |
 
 #. Click on ``Multi-Factor Authentication``
 
    .. image:: ../pictures/module1/mfa_menu.png
       :align: center
+   |
 
 #. ``Enable MFA`` for the created user
 

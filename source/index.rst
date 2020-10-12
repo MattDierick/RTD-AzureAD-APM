@@ -13,7 +13,7 @@ In this lab, we will use the new **Easy Button** Guided Configuration template. 
 #. Enable Single Sign on
 #. Interconnect (SAML binding) APM with Azure AD tenant
 
-.. note :: you will notice we will never connect to Azure AD interface. APM will use Microsoft Graph API to configure AAD tenant accordingly.
+.. note :: You will notice we will never connect to Azure AD interface. APM will use Microsoft Graph API to configure AAD tenant accordingly.
 
 .. image:: AAD-APM-archi.png
    :align: center

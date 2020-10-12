@@ -17,7 +17,7 @@ Configuration Properties
 #. Click ``Next`` and start the configuration
 #. Configure the page as below
 
-   #. Configuration Name : IIS-Vanilla-<My Name>  Why my name ? Because this app will be created in Azure AD tenant. And we need to differentiate all apps. 
+   #. Configuration Name : ``IIS-Vanilla-<My Name>``  Why my name ? Because this app will be created in Azure AD tenant. And we need to differentiate all apps. 
    #. Enable ``Single Sign-on (SSO)``
 
         .. image:: ../pictures/module2/SSO.png
@@ -25,7 +25,7 @@ Configuration Properties
            :scale: 50%
       
 
-   #. In ``Azure Service Account Details``, Select ``Copy Account Info form Existing Configuration``, and select ``IIS-basline``, then click ``Copy``
+   #. In ``Azure Service Account Details``, Select ``Copy Account Info form Existing Configuration``, and select ``IIS-baseline``, then click ``Copy``
 
       .. image:: ../pictures/module2/IIS-baseline.png
          :align: center
@@ -39,6 +39,7 @@ Configuration Properties
          #. In Azure AD, create a service application under your organization's tenant directory using App Registration.
          #. Register the App as Azure AD only single-tenant.
          #. Request permissions for Microsoft Graph APIs and assign the following permissions to the application:
+            
             #. Application.ReadWrite.All
             #. Application.ReadWrite.OwnedBy
             #. Directory.Read.All
@@ -63,7 +64,7 @@ Service Provider
 #. Configure the page as below
 
    #. Host ``vanilla.f5access.onmicrosoft.com``
-   #. Entity ID is auto-filled``https://vanilla.f5access.onmicrosoft.com/IIS-Bluesky-my name>``
+   #. Entity ID is auto-filled ``https://vanilla.f5access.onmicrosoft.com/IIS-Bluesky-my name>``
 
       .. image:: ../pictures/module2/SP.png
          :scale: 50%
@@ -111,8 +112,8 @@ Virtual Server Properties
 
 #. Configure the VS as below
 
-   #. IP address : 10.1.10.103
-   #. ClientSSL profile. We will get a TLS warning in the browser, but it dies not matter.
+   #. IP address : ``10.1.10.103``
+   #. ``ClientSSL`` profile. We will get a TLS warning in the browser, but it does not matter for this lab.
 
    .. image:: ../pictures/module2/VS.png
       :align: center
@@ -141,7 +142,7 @@ Single Sign-On Settings
 #. In ``Credentials Source``, fill as below
 
     #. Username Source : ``session.saml.last.identity``
-    #. Delete User Realm Source. The domain is similar between Azure AD and on-prems AD
+    #. Delete User Realm Source value - keep it empty. The domain is similar between Azure AD and on-prems AD.
 
 #. In ``SSO Method Configuration``, fill as below
 
@@ -173,7 +174,7 @@ Deploy your app template
       :align: center
    |
 
-#. Behind the scene, the deployment creates an Azure Enterprise Application for Bluesky. We can see it in Azure portal (you don't have access in this lab). With this Enterprise Application, Azure knows where to redirect you when authenticated. And this app has the certificate and key used to sign the SAML assertion.
+#. Behind the scene, the deployment creates an ``Azure Enterprise Application`` for ``Bluesky``. We can see it in ``Azure portal`` (you don't have access in this lab). With this Enterprise Application, Azure knows where to redirect you when authenticated. And this app has the certificate and key used to sign the SAML assertion.
 
    .. image:: ../pictures/module2/azure_portal.png
       :align: center
@@ -194,7 +195,7 @@ Test your deployment
    |
 
 #. You are redirected to APM with a SAML assertion, and can access to Vanilla application.
-#. APM does Single Sign-on with Vanilla application (Kerberos Constrained Delegation)
+#. APM did ``Single Sign-on`` with Vanilla application (Kerberos Constrained Delegation)
 
     .. image:: ../pictures/module2/vanilla.png
       :align: center

@@ -6,7 +6,7 @@ Bluesky application
 
 This application resides on-prems in IIS server. Its FQDN is ``https://bluesky.f5access.onmicrosoft.com`` 
 
-This application is not **authenticated**, meaning there is no **Single Sign on** in front of this app.
+This application is not **authenticated**, meaning there is no **Single Sign on** required in front of this app.
 
 .. image:: ../pictures/module1/bluesky.png
    :align: center

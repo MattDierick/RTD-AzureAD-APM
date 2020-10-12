@@ -15,21 +15,22 @@ Configuration Properties
 #. Click ``Next`` and start the configuration
 #. Configure the page as below
 
-   #. Configuration Name : IIS-Bluesky-<My Name>  Why my name ? Because this app will be created in Azure AD tenant. And we need to differentiate all apps. 
-   #. In ``Azure Service Account Details``, Select ``Copy Account Info form Existing Configuration``, and select ``IIS-basline``, then click ``Copy``
+   #. Configuration Name : ``IIS-Bluesky-<My Name>``  Why my name ? Because this app will be created in Azure AD tenant. And we need to differentiate all apps. Example : ``IIS-Bluesky-Matt``
+   #. In ``Azure Service Account Details``, Select ``Copy Account Info form Existing Configuration``, and select ``IIS-baseline``, then click ``Copy``
 
       .. image:: ../pictures/module1/IIS-baseline.png
          :align: center
          :scale: 50%
 
       |
-      .. note :: In a real world, you will set here the values from the Azure Service Application created for APM. You have to create an Azure Application so that APM get access to Microsoft Graph API. But for **security concerns**, I can't show in this lab the application secret.
+      .. note :: In a real world, you will set here the values from the Azure Service Application created for APM. You have to create an Azure Application so that APM gets access to Microsoft Graph API. But for **security concerns**, I can't show in this lab the application secret.
 
       .. note :: The steps to create this Azure applications are below
 
          #. In Azure AD, create a service application under your organization's tenant directory using App Registration.
          #. Register the App as Azure AD only single-tenant.
          #. Request permissions for Microsoft Graph APIs and assign the following permissions to the application:
+            
             #. Application.ReadWrite.All
             #. Application.ReadWrite.OwnedBy
             #. Directory.Read.All
@@ -45,7 +46,7 @@ Configuration Properties
       .. image:: ../pictures/module1/test_conn.png
          :scale: 50%
 
-   #. Click Next
+   #. Click ``Next``
 
 
 Service Provider
@@ -54,7 +55,7 @@ Service Provider
 #. Configure the page as below
 
    #. Host ``bluesky.f5access.onmicrosoft.com``
-   #. Entity ID is auto-filled``https://bluesky.f5access.onmicrosoft.com/IIS-Bluesky-my name>``
+   #. Entity ID is auto-filled ``https://bluesky.f5access.onmicrosoft.com/IIS-Bluesky-my name>``
 
       .. image:: ../pictures/module1/SP.png
          :scale: 50%
@@ -94,6 +95,7 @@ Azure Active Directory
 
          .. image:: ../pictures/module1/user1.png
             :align: center
+         |
 
       #. Click ``Save & Next``
 
@@ -102,8 +104,8 @@ Virtual Server Properties
 
 #. Configure the VS as below
 
-   #. IP address : 10.1.10.104
-   #. ClientSSL profile. We will get a TLS warning in the browser, but it dies not matter.
+   #. IP address : ``10.1.10.104``
+   #. ``ClientSSL`` profile. We will get a TLS warning in the browser, but it does not matter for this lab.
 
    .. image:: ../pictures/module1/VS.png
       :align: center
@@ -135,7 +137,7 @@ Deploy your app template
       :align: center
    |
 
-#. Behind the scene, the deployment creates an Azure Enterprise Application for Bluesky. We can see it in Azure portal (you don't have access in this lab). With this Enterprise Application, Azure knows where to redirect you when authenticated. And this app has the certificate and key used to sign the SAML assertion.
+#. Behind the scene, the deployment creates an ``Azure Enterprise Application`` for ``Bluesky``. We can see it in ``Azure portal`` (you don't have access in this lab). With this Enterprise Application, Azure knows where to redirect the user when authenticated. And this app has the certificate and key used to sign the SAML assertion.
 
    .. image:: ../pictures/module1/azure_portal.png
       :align: center
