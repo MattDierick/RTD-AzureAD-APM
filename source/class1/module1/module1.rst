@@ -1,35 +1,48 @@
 Architecture of Internal Apps
 #############################
 
-.. note:: This application is available in GitLab in case you want to build your own lab : 
+Bluesky application
+*******************
 
-First of all, it is important to understand how Arcadia app is split between micro-services
+This application resides on-prems in IIS server. Its FQDN is ``https://bluesky.f5access.onmicrosoft.com`` 
 
+This application is not **authenticated**, meaning there is no **Single Sign on** in front of this app.
 
-**This is what Arcadia App looks like when the 4 microservices are up and running, and you can see how traffic is routed based on URI**
-
-.. image:: ../pictures/module1/arcadia-api.png
-   :align: center
-
-**But you can deploy Arcadia Step by Step**
-
-If you deploy only ``Main App`` and ``Back End`` services.
-
-.. image:: ../pictures/module1/MainApp.png
-   :align: center
-
-.. note:: You can see App2 (Money Transfer) and App3 (Refer Friend) are not available. There is dynamic content showing a WARNING instead of a 404 or blank frame.
-
-|
-
-If you deploy ``Main App``, ``Back End`` and ``Money Tranfer`` services.
-
-.. image:: ../pictures/module1/app2.png
+.. image:: ../pictures/module1/bluesky.png
    :align: center
 
 |
 
-If you deploy ``Main App``, ``Back End``, ``Money Tranfer`` and ``Refer Friend`` services.
+Vanilla application
+*******************
 
-.. image:: ../pictures/module1/app3.png
+This application resides on-prems in IIS server. Its FQDN is ``https://vanilla.f5access.onmicrosoft.com`` 
+
+This application is **authenticated** by Kerberos. So a **Signle Sign On** will be required to connect to this app.
+
+.. image:: ../pictures/module1/vanilla.png
    :align: center
+
+**Check IIS configuration**
+
+#. RDP to IIS with ``f5access\user`` as user, and ``user`` as password
+#. Click ``IIS manager`` icon in the taskbar
+
+   .. image:: ../pictures/module1/winmenu.png
+      :align: center
+      :scale: 50%
+
+#. In the Connections tree, click on ``vanilla`` and ``Authentication``
+
+   .. image:: ../pictures/module1/IIS_vanilla.png
+      :align: center
+      :scale: 50%
+
+#. You can notice ``Anonymous Auth`` is **Disabled** and ``Windows Authentication`` is **Enabled**
+
+   .. image:: ../pictures/module1/vanilla_krbt.png
+      :align: center
+      :scale: 50%
+
+
+.. note :: In the next class we will configure APM to publish, protect and SSO to internal apps.

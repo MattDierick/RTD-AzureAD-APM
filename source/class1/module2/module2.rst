@@ -1,35 +1,24 @@
 Architecture of Cloud App
 #########################
 
-.. note:: This application is available in GitLab in case you want to build your own lab : 
+.. note :: In this use case, we don't cover only internal, sensitive or legacy applications. In a real world, customers have application on-prems and in the public cloud.
 
-First of all, it is important to understand how Arcadia app is split between micro-services
+.. note :: A Wordpress application is already up and running in Azure Cloud at this address ``https://wordpress-apm-aad.azurewebsites.net/```
 
-
-**This is what Arcadia App looks like when the 4 microservices are up and running, and you can see how traffic is routed based on URI**
-
-.. image:: ../pictures/module1/arcadia-api.png
+.. image:: ../pictures/module2/WP_UDF.png
    :align: center
 
-**But you can deploy Arcadia Step by Step**
 
-If you deploy only ``Main App`` and ``Back End`` services.
+#. This Wordpress application is an Azure App Service.
 
-.. image:: ../pictures/module1/MainApp.png
-   :align: center
+   .. image:: ../pictures/module2/azure.png
+      :align: center
 
-.. note:: You can see App2 (Money Transfer) and App3 (Refer Friend) are not available. There is dynamic content showing a WARNING instead of a 404 or blank frame.
+#. This App Service is already bound with our demo Azure AD tenant.
 
-|
+   .. image:: ../pictures/module2/OIDC.png
+      :align: center
+      :scale: 50%
 
-If you deploy ``Main App``, ``Back End`` and ``Money Tranfer`` services.
+.. warning :: It is important to note here, this application is not tied to APM. APM only publish and protect on-prems apps. All other cloud and SaaS apps are directly connected to Azure AD.
 
-.. image:: ../pictures/module1/app2.png
-   :align: center
-
-|
-
-If you deploy ``Main App``, ``Back End``, ``Money Tranfer`` and ``Refer Friend`` services.
-
-.. image:: ../pictures/module1/app3.png
-   :align: center

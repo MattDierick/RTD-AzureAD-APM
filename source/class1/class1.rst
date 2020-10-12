@@ -1,11 +1,16 @@
-Class 1 - Check the Lab Archtiecture
-####################################
+Class 1 - Check the Lab Archtitecture
+#####################################
 
 In this class, we will protect 3 apps:
 
 #. 2 internal apps
+   
+   #. Vanilla Application hosted in IIS
+   #. Skyblue Application hosted in IIS
+
 #. 1 cloud app hosted in Azure cloud
 
+   #. Wordpress-UDF hosted in Azure cloud
 
 .. image:: ./pictures/labarchi.png
    :align: center
