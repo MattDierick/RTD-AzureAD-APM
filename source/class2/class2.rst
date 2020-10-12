@@ -21,7 +21,7 @@ What is a modern environment:
 
 |
 
-**Class 1 - All sections**
+**Class 2 - All sections**
 
 .. toctree::
    :maxdepth: 1
