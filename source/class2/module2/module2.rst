@@ -80,7 +80,7 @@ Azure Active Directory
    .. note :: As you can notice, there are several templates available for different applications. Here, in this lab, we will publish a generic app. So we select the first template.
 
 #. Click ``Add``
-#. In the new screen, configure as below
+#. In the new screen, configure as below.
 
    #. Signing Key : ``default.key``
    #. Signing Certificate : ``default.crt``
