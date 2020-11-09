@@ -6,7 +6,7 @@ Let's continue with ``Vanilla`` application. Reminder, Vanilla application as ``
 #. Connect to BIG-IP HTTPS user interface from UDF as ``admin`` and password ``admin``
 #. In ``Access`` > ``Guided Configuration``, select ``Microsoft Integration`` > ``Azure AD application`` 
 
-    .. note :: As you can notice, we deploy one template per application
+   .. note :: As you can notice, we deploy one template per application
 
    .. image:: ../pictures/AGC.png
       :align: center
