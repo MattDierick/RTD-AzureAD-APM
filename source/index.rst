@@ -17,7 +17,7 @@ In this lab, we will use the new **Easy Button** Guided Configuration template. 
 
 .. image:: AAD-APM-archi.png
    :align: center
-   :scale: 60%
+   :scale: 70%
 
 |
 
