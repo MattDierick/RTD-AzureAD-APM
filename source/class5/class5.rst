@@ -1,4 +1,4 @@
-Class 5 - Clean up the lab
+Class 4 - Clean up the lab
 ##########################
 
 .. warning :: In order to keep the Azure AD tenant clean, it is important you delete your application in Guided Configuration, when your demo is finished.
