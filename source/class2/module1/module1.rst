@@ -150,7 +150,7 @@ Test your deployment
 #. RDP to Win10 machine as ``user`` and password ``user``
 #. Open ``Microsoft Edge`` browser - icon is on the Desktop
 #. Click on the ``bookmark`` ``Bluesky``
-#. You will be redirected to Azure AD login page. Login as ``user1@f5access.onmicrosoft.com``, and password ``F5twister$``
+#. You will be redirected to Azure AD login page. Login as ``user1@f5access.onmicrosoft.com``, and for the password please ask to your instructor.
 
    .. image:: ../pictures/module1/login.png
       :align: center
